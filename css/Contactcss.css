@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #393939;
+}
+
+
+
+/* Navigation Bar*/
+img{
+	float: left;
+	height: 150px;
+	padding-left: 30px;
+	margin: 0;
+}
+
+.main-nav{
+	height: 150px;
+	background: #000;
+	margin-bottom: 20px;
+}
+
+.main-nav{
+	padding-right: 55px;
+}
+
+.main-nav{
+/*	margin-top: 40px;*/
+}
+
+/*  Nav List Items / Tap List / About / Contact / Shop / Cart */
+
+.main-nav li{
+	margin-top: 50px;
+	padding: 10px;
+/*	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+	background: #262626;
+	text-align: center;
+	border: #ddd 1px solid;
+	border-radius: 10px;
+	margin-left: 15px;
+	transition: all 0.5s;
+	text-decoration: none;
+}
+
+li{
+	float: right;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li:hover{
+	border-color: #d93;
+	color: #d93;
+}
+
+a{
+	text-decoration: none;
+	color: #ddd;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	transition: all 0.5s;
+}
+
+a:hover{
+	color: #ddd;
+}
+
+.main-nav li:hover{
+	background: #d93;
+}
+
+/* Shopping Cart Color*/
+i{
+	
+	color: #ddd;
+	transition: all 0.5s;
+	margin-left: 3px;
+}
+
+p{
+	font-size: 16px;
+	color: #fff;
+	
+}
+
+h1{
+	color: #d93;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Icon Classes */
+
+#envp{
+	color: #d93;
+}
+
+#phne{
+	color: #d93;
+}
+
+#mapp{
+	color: #d93;
+}
+
+#clndr{
+	color: #d93;
+}
+
+.msg{
+	color: #d93;
+}
+
+
+
+/*background image*/
+#bg-img{
+	background: url(https://images.unsplash.com/photo-1518176258769-f227c798150e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.3;
+	
+}
+
+/*Grid*/
+#parent{
+	padding-top: 55px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+/*	grid-gap: 5px;*/
+	width: 100%;
+	position: absolute;
+}
+
+/*Contact Form*/
+#info{
+	padding-top: 20px;
+	color: #d93;
+	font-family: 'Open Sans Condensed', sans-serif;
+	line-height: 1.3rem;
+	padding-right: 25px;
+	z-index: 2;
+/*	text-align: right;*/
+	text-align: center;
+	grid-column: 2/3;
+	background: #1A1A1A;
+}
+
+#map{
+	background: #1A1A1A;
+	height: 353px;
+	width: 100%;
+	z-index: 2;
+	grid-column: 3/4;
+}
+
+/*Contact Form Text Areas*/
+fieldset{
+	padding-top: 10px;
+	border: none;
+	grid-column: -4/-2;
+	z-index: 2;
+	color: #d93;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+	background: #1A1A1A;
+	padding-bottom: 15px;
+}
+
+input[type=text], select {
+	width: 95%;
+}
+
+textarea {
+	width: 95%;
+}

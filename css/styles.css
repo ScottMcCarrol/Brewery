@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #292929;
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+
+/* Navigation*/
+.main-nav{
+	display: block;
+	padding-top: 2rem;
+}
+
+.main-nav ul{
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ddd;
+	text-decoration: none;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.1rem;
+	color: #d93;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding-top: 2.5rem;
+	padding-bottom: 5rem;
+	text-transform: uppercase;
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 5.5rem;
+	color: #d93;
+	
+}
+
+h1 .about-image{
+	background: url(https://www.idiombrewing.com/wp-content/uploads/2016/09/1-12518439314_2a10f88bf2_h.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100px;
+	z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+

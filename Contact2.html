@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	
+	<link rel="stylesheet" href="css/Contactcss.css">
+	<link rel="stylesheet" href="js/map.js">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+	
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="bar">
+		<nav class="main-nav">
+			<div class="logo">
+				<img src="https://www.idiombrewing.com/wp-content/uploads/2018/05/Idiom-blk-bkgd-Tagline.png" alt="">
+			</div>
+			<ul>
+				<!-- <li><a href="#">Cart</a>    <i class="fas fa-shopping-cart"></i></li> -->
+				<!-- <li><a href="#">Shop</a></li> -->
+				<li><a href="./Contact2.html">Contact</a></li>
+				<li><a href="./index2.html">About</a></li>
+				<li><a href="./tapListprac2b.html">Tap List</a></li>
+			</ul>
+		</nav>
+		
+		
+<div class="grid">
+	<div id="parent">
+		<div id="info">
+			<i class="fas fa-envelope" id="envp"></i>	
+<strong>Email</strong>
+		<br>info@idiombrewing.com<br><br>
+		<i class="fas fa-phone-alt" id="phne"></i>	
+<strong>Phone</strong>
+		<br>(240) 678-4152<br><br>
+		<i class="fas fa-map-marker-alt" id="mapp"></i>	
+<strong>Address</strong>
+		<br>340 E. Patrick Street, 21701<br>
+			Suite #104, Frederick, MD<br><br>
+		<i class="fas fa-calendar-alt" id="clndr"></i>	
+<strong>Hours of Operation</strong>
+		<br>Wednesday: 4pm - 10pm<br>
+			Thursday: 12pm - 11pm<br>
+			Friday: 12pm - 11pm<br>
+			Saturday: 12pm - 11pm<br>
+			Wednesday: 12pm - 8pm
+		</div>
+<div id="map"></div>
+<!-- Script For Map -->
+	<script>
+		function initMap() {
+			var location = {lat: 39.413568, lng: -77.403825};
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 4,
+				center: location
+			});
+		}
+		
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO5_MQGncrwl1-uvaTeyWCC4dhIf-lshI&callback=initMap"></script>
+		
+	<fieldset>
+		<label class="fname">Name: <br>
+		<input type="text" "name=name" /></label><br />
+		<label class="fphone">Phone: <br>
+		<input type="text" "name=phone" /></label><br />
+		<label class="femail">Email: <br>
+		<input type="text" "name=email" /></label><br />
+		<form action="#">
+			<p class="msg">Message:</p>
+			<textarea name="comments" id="" cols="30" rows="10"></textarea>
+		</form>
+	</fieldset>
+		
+	</div>	
+	<div id="bg-img"></div>
+</div>

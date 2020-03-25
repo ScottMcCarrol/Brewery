@@ -1,0 +1,521 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #393939;
+}
+
+
+
+/* Navigation Bar*/
+img{
+	float: left;
+	height: 150px;
+	padding-left: 30px;
+	margin: 0;
+}
+
+.main-nav{
+	height: 150px;
+	background: #000;
+	margin-bottom: 20px;
+}
+
+.main-nav{
+	padding-right: 55px;
+}
+
+.main-nav{
+/*	margin-top: 40px;*/
+}
+
+/*  Nav List Items / Tap List / About / Contact / Shop / Cart */
+
+.main-nav li{
+	margin-top: 50px;
+	padding: 10px;
+/*	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+	background: #262626;
+	text-align: center;
+	border: #ddd 1px solid;
+	border-radius: 10px;
+	margin-left: 15px;
+	transition: all 0.5s;
+	text-decoration: none;
+}
+
+li{
+	float: right;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li:hover{
+	border-color: #d93;
+	color: #d93;
+}
+
+a{
+	text-decoration: none;
+	color: #ddd;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	transition: all 0.5s;
+}
+
+a:hover{
+	color: #ddd;
+}
+
+.main-nav li:hover{
+	background: #d93;
+}
+
+/* Shopping Cart Color*/
+i{
+	
+	color: #ddd;
+	transition: all 0.5s;
+	margin-left: 3px;
+}
+
+p{
+	font-size: 16px;
+	color: #fff;
+	
+}
+
+h1{
+	color: #d93;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Grid */
+.grid{
+	height: 100vh;
+	width: 100vh;
+}
+
+#parent{
+	display: grid;
+/*	grid-template-columns: 10% 40% 40% 10%;*/
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+/*	grid-template-columns: auto 350px 350px auto;*/
+/*	grid-template-rows: 100%;*/
+/*	grid-template-rows: 400px;*/
+/*	grid-template-rows: 470px;*/
+	grid-template-rows: repeat(4, 70vh);
+/*	grid-template-rows: 100vh;*/
+	grid-gap: 10px;
+	padding: 7.5px;
+/*	padding-bottom: 50px;*/
+	margin-bottom: 0px;
+	height: 100%;
+}
+
+.cotcbar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 3px;
+	padding-left: 5px;
+	grid-column: 1/2;
+	position: absolute;
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	
+}
+
+.cotcinfo{
+	
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+	position: absolute;
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 2/3;
+	grid-row: 1/2;
+	z-index: 1;
+}
+
+/*
+.cotcinfo{
+	background: #222;
+	opacity: 0.5;
+}
+
+.cotcinfop{
+	z-index: 2;
+}
+*/
+
+.cotc{
+	background-image: url("../img/beer2/cotc1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+/*	grid-column: 2/3;*/
+}
+
+.ph5bar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.ph5info{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 2/3;
+	grid-row: 1/2;
+	z-index: 1;
+}
+
+.ph5{
+	background-image: url("../img/beer2/phrased1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.wtsbar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.wtsinfo{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 3/4;
+	grid-row: 1/2;
+	z-index: 1;
+}
+
+.wts{
+	background-image: url("../img/beer2/wts.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.wgabar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+
+.wgainfo{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 4/5;
+	grid-row: 1/2;
+	z-index: 1;
+}
+
+.whatgoesaround{
+	background-image: url("../img/beer2/whatgoesaround.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+
+.unk1bar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.unk1info{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 1/2;
+	grid-row: 2/3;
+	z-index: 1;
+}
+
+.unk1{
+	background-image: url("../img/beer2/unknown_1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 1/2;
+	grid-row: 2/3;
+}
+
+.amubar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.amuinfo{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 2/3;
+	grid-row: 2/3;
+	z-index: 1;
+}
+
+.amu{
+	background-image: url("../img/beer2/amu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.cotc2bar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.cotc2info{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 3/4;
+	grid-row: 2/3;
+	z-index: 1;
+}
+
+.cotc2{
+	background-image: url("../img/beer2/cotc1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.ph6bar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 4/5;
+	grid-row: 2/3;
+}
+
+.ph6info{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 4/5;
+	grid-row: 2/3;
+	z-index: 1;
+}
+
+.ph6{
+	background-image: url("../img/beer2/phrased1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 4/5;
+	grid-row: 2/3;
+}
+
+.tubar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.tuinfo{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 2/3;
+	grid-row: 3/4;
+	z-index: 1;
+}
+
+.tu{
+	background-image: url("../img/beer2/tu.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.unk2bar{
+	background: #262626;
+	opacity: 0.6;
+	margin-top: 130px;
+	margin-left: 39px;
+	padding-bottom: 5px;
+	padding-right: 4px;
+	padding-left: 5px;
+/*	grid-column: 1/2;*/
+/*	position: absolute;*/
+	width: 296px;
+	height: 117px;
+	border-radius: 7px 0px 0px 7px;
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+.unk2info{
+	margin-top: 130px;
+	margin-left: 43px;
+	padding-bottom: 5px;
+/*	position: absolute;*/
+	text-align: center;
+/*	text-align: center;*/
+/*	grid-column: 2/3;*/
+	grid-column: 3/4;
+	grid-row: 3/4;
+	z-index: 1;
+}
+
+.unk2{
+	background-image: url("../img/beer2/unknown_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
